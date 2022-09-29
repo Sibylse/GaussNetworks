@@ -80,6 +80,3 @@ class Gauss_DUQ(nn.Module):
         features_sum = torch.einsum("ijk,ik->jk", DW, Y)
 
         self.m = self.alpha * self.m + (1 - self.alpha) * features_sum
-
- 
-Footer
