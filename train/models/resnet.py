@@ -110,6 +110,9 @@ def ResNet18(classifier):
     embed.fc = nn.Identity()
     return ResNet(embed,classifier)
 
+def ResNet18_own(classifier):
+    return ResNet(BasicBlock, [2,2,2,2],classifier)
+
 def ResNet34(classifier):
     return ResNet(BasicBlock, [3,4,6,3],classifier)
 
